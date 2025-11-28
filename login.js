@@ -32,7 +32,8 @@ signInButton.addEventListener("click", function (event) {
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      window.location.href= "main.html";
+localStorage.setItem("userEmail", user.email);
+window.location.href = "main.html";
       // ...
     })
     .catch((error) => {

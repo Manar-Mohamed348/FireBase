@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+body {
+    background: #224783;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content min-content;
+    gap: 10px;
+}
+
+button {
+    background-color: #224783;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    transform: translate(110%, 200%);
+    -webkit-transform: translate(110%, 200%);
+    -moz-transform: translate(110%, 200%);
+    -ms-transform: translate(110%, 200%);
+    -o-transform: translate(110%, 200%);
+    font-size: 16px;
+}
+button:hover {
+    background-color: #1a3560;
+}
