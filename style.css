@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+}
+
+.header {
+    padding: 30px 30px 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.logo-icon {
+    background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.logo-icon i {
+    color: white;
+    font-size: 20px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4285F4;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 15px;
+}
+
+.form-container {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4285F4;
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(66, 133, 244, 0.4);
+}
+
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+    color: #777;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    z-index: 1;
+}
+
+.divider span {
+    background-color: white;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-login {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-2px);
+}
+
+.social-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.social-btn.google i {
+    color: #DB4437;
+}
+
+.social-btn.facebook i {
+    color: #4267B2;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    color: #4285F4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.terms a {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.navigation a {
+    color: #4285F4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.welcome-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
